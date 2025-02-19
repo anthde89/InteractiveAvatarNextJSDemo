@@ -242,7 +242,9 @@ export default function InteractiveAvatar() {
                   onChange={(e) => setAvatarId(e.target.value)}
                 />
                 <Select
+                  label="Select avatar"
                   placeholder="Or select one from these example avatars"
+                  aria-label="Select avatar"
                   size="md"
                   onChange={(e) => {
                     setAvatarId(e.target.value);
@@ -260,6 +262,7 @@ export default function InteractiveAvatar() {
                 <Select
                   label="Select language"
                   placeholder="Select language"
+                  aria-label="Select language"
                   className="max-w-xs"
                   selectedKeys={[language]}
                   onChange={(e) => {
